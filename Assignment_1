@@ -1,0 +1,56 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+* - Expression
+'hello' - String value
+-87.8  - Float value
+-  - Expression
+/  - Expression
++  - Expression
+6  - Integer value
+
+2. What is the difference between string and variable?
+  String - it is an value representing a text either in single quote or double quote.
+  Variable - it is a name that can refer to any value.
+
+3. Describe three different data types.
+  Number - it is used to store integer values.
+  String -it is used to store sequence of characters.
+  Float - it is used to store float values.
+
+4. What is an expression made up of? What do all expressions do?
+  An Expression is made up of a combination of variable and operators which is evaluated to get a single value.
+  For Example: Consider an expression 2+2
+  Here, 2s are the variables and + is an mathematical operator which evaluates to give an result 4.
+
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+  Statement can be represented like an command or an action but expression is a combination of variables and operators that gives a result value.
+  An expression always returns a value which can be printed on screen but statement is a line of code that will not print any value onto the screen.
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+  Value will be 23 as it intially assigning 22 to the variable bacon and its incrementing it by 1 so it will return 23.
+
+7. What should the values of the following two terms be?
+'spam' 'spamspam'
+'spam' * 3
+  Both the expressions gives same value 
+  'spamspamspam'
+  'spamspamspam'
+  
+8. Why is eggs a valid variable name while 100 is invalid?
+  Variable name should start with albhapet or by underscore no other special characters except _ are valid.
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+  int()
+  float()
+  str()
+
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten' + 99 + 'burritos'
+  will get an typeerror while executing this code because a string cannot be concatinated with a integer.
+  if we want to get an result as 'I have eaten99burritos' then code should be modified as 'I have eaten' +'99' + 'burritos'.
