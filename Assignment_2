@@ -8,38 +8,89 @@
 3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
 values for the operator and what it evaluate ).
     P 	Q	  AND(∧)  OR(∨) NAND(~∧)  NOR(~∨) XOR(⊻)  Conditional(⇒)  Bi-conditional(⇔)
-    T 	T	    T	      T   	F	         F	     F	        T	              T
-    T	  F	    F     	T	    T	         F       T	        F             	F
-    F	  T   	F	      T   	T	         F	     T	        T	              F
-    F	  F	    F	      F   	T	         T	     F	        T	              T
+    T 	T	    T	    T   	F	         F	     F	        T	            T
+    T	F	    F     	T	    T	         F       T	        F             	F
+    F	T   	F	    T   	T	         F	     T	        T	            F
+    F	F	    F	    F   	T	         T	     F	        T	            T
     
 4. What are the values of the following expressions?
-(5 &gt; 4) and (3 == 5)
-not (5 &gt; 4)
-(5 &gt; 4) or (3 == 5)
-not ((5 &gt; 4) or (3 == 5))
-(True and True) and (True == False)
-(not False) or (not True)
+(5 > 4) and (3 == 5)    -   1 and 0 = 0
+not (5 > 4)             -   0
+(5 > 4) or (3 == 5)     -   1 or 0 = 1
+not ((5 > 4) or (3 == 5))   -   not(1 or 0) = not(1) = 0
+(True and True) and (True == False)     -   1 and 0 = 0
+(not False) or (not True)       -   1 or 0 = 1
+
 5. What are the six comparison operators?
+    >,<,==,!=,>=,<=
+    
 6. How do you tell the difference between the equal to and assignment operators?Describe a
 condition and when you would use one.
+    = is an relational operator where == is an comparision operator
+    = is used to assigning a value to a variable where == is used for comparing two variables.
+   For example please refer below code to know when we use them.
+    a=10 #assigning a value to a variable using assignment operator
+    b=20 #assigning a value to a variable using assignment operator
+    if a==b:  #comparing the value using equal to operator
+        print("a is equal to b")
+        else:
+        print("a is not equal to b")
+        
+        
 7. Identify the three blocks in this code:
 spam = 0
 if spam == 10:
-print(&#39;eggs&#39;)
-if spam &gt; 5:
-print(&#39;bacon&#39;)
+print('eggs')
+if spam > 5:
+print('bacon')
 else:
-print(&#39;ham&#39;)
-print(&#39;spam&#39;)
-print(&#39;spam&#39;)
+print('ham')
+print('spam')
+print('spam')
+    spam = 0
+    if spam == 10:
+        print('eggs')
+        if spam > 5:
+            print('bacon')
+            else:
+                print('ham')
+                print('spam')
+                print('spam')
+    
+
 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
 Greetings! if anything else is stored in spam.
+Spam=int(input("Enter a spam number"))
+if(Spam==1):
+    print("Hello")
+elif(Spam==2):
+    print("Howdy")
+else:
+    print("Greetings!")
 
 9.If your programme is stuck in an endless loop, what keys you’ll press?
+    Ctrl-Z or Ctrl-C
+
 10. How can you tell the difference between break and continue?
+    Break early terminates the loop where continue will cause execution of the next iteration
+    Break stops the continuation of loop where continue does not stop the the continuation of loop just stops the current one.
+
 11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+    In for loop range(10),range(0,10) and range(0,10,1) all defines the same range of values where, All od it gives an values ranging from index 0 to 9.
+   
 12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
 program that prints the numbers 1 to 10 using a while loop.
+    For loop:
+    for i in range(1,11):
+        print(i)
+    
+    While loop:
+    count=1
+    while count<=10:
+        print(count)
+        count+=1
+        
 13. If you had a function named bacon() inside a module named spam, how would you call it after
 importing spam?
+
+
