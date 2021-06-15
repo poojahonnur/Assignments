@@ -52,10 +52,10 @@ print('spam')
         print('eggs')
         if spam > 5:
             print('bacon')
-            else:
-                print('ham')
-                print('spam')
-                print('spam')
+        else:
+            print('ham')
+            print('spam')
+            print('spam')
     
 
 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
@@ -92,5 +92,4 @@ program that prints the numbers 1 to 10 using a while loop.
         
 13. If you had a function named bacon() inside a module named spam, how would you call it after
 importing spam?
-
-
+    spam.bacon()
