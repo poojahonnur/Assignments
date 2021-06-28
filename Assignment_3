@@ -1,0 +1,63 @@
+1. Why are functions advantageous to have in your programs?
+  Functions reduce the need for duplicate code.
+  code in the function will execute when function is called.
+  This makes programs shorter, easier to read, and easier to update.
+  
+2. When does the code in a function run: when it's specified or when it's called?
+  Defining a function is the creation of a function
+  def multiple(x,y):
+      return x*y
+  Calling a function would look like
+  print(multiply(2,3))
+
+3. What statement creates a function?
+  The "def" keyword is a statement for defining a function in Python. 
+
+4. What is the difference between a function and a function call?
+  A function is a block of code that does a particular operation and returns a result. It usually accepts inputs as parameters and returns a result. 
+  The parameters are not mandatory.
+  def add(a,b):
+    return a+ b
+  A function call is the code used to pass control to a function.
+  b = add(5,6)
+  Now b will have the value 11.
+  
+5. How many global scopes are there in a Python program? How many local scopes?
+  Global scope: The names that you define in this scope are available to all your code.
+  Local scope: The names that you define in this scope are only available or visible to the code within the scope.
+
+6. What happens to variables in a local scope when the function call returns?
+  A local variable retains its value until the next time the function is called
+  A local variable becomes undefined after the function call completes
+  The local variable can be used outside the function any time after the function call completes.
+  When the function returns,Local scopeDestroyed, all the variables are forgotten.
+  
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+  A return statement is used to end the execution of the function call and returns the result. 
+  The statements after the return statements are not executed. 
+  If the return statement is without any expression, then the special value None is returned.
+  return can be used
+  
+8. If a function does not have a return statement, what is the return value of a call to that function?
+   If a function doesn't specify a return value, it returns None
+  
+9. How do you make a function variable refer to the global variable?
+   You can use a global variable within other functions by declaring it as global within each function that assigns a value to it
+   The Global statement forces a variable in a function to reference the global variable.
+   
+10. What is the data type of None?
+    None is used to define null values
+    None keyword is an object, and it is a data type of the class NoneType
+  
+11. What does the sentence import areallyourpetsnamederic do?
+    The import statement imports the areallyourpetsnamederic module which is not a real python module
+    
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+    spam.bacon().
+    
+13. What can you do to save a programme from crashing if it encounters an error?
+    keep the line of code which causing the error in an try clause.
+    
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+    Possible error Put it in the try clause.
+    Code to execute when an error occurs Put in the except clause.
